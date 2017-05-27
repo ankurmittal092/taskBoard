@@ -149,7 +149,5 @@
 		}
 	};
 
-	(function () {
-		addListJS.addEventListener('click',addListClickHandeler);
-	})();
+	addListJS.addEventListener('click',addListClickHandeler);
 })();
