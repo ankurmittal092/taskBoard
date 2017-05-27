@@ -1,0 +1,91 @@
+body {
+	color: green;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.pg-body {
+	padding: 20px;
+	min-height: 100vh;
+	background-color: #fafafa;
+	font-size: 16px;
+	color: #687584;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+.pg-body .add-list {
+	cursor: pointer;
+	text-align: center;
+	color: #da5166;
+}
+
+.list-wrapper {
+	white-space: nowrap;
+}
+
+.list {
+	height: 100%;
+	width: 300px;
+	margin: 0 5px;
+	padding: 10px;
+	max-height: calc(100vh - 40px);
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	background: #fff;
+	border-radius: 3px;
+	overflow-y: auto;
+}
+
+.list.over {
+	border: 2px dashed;
+	opacity: 0.55;
+}
+
+.list-hd {
+	font-size: 20px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid;
+	white-space: normal;
+}
+
+.list-item {
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(104, 117, 132, 0.21);
+	cursor: move;
+	white-space: normal;
+	position: relative;
+}
+
+.list-item .cross {
+	// display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 5px;
+	background: #fff;
+}
+
+.input-wrp {
+	cursor: default;
+}
+
+.input-wrp input{
+	width: 100%;
+	border: 1px solid;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+}
